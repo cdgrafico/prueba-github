@@ -284,11 +284,12 @@ h3 {
 
 .formFlex {
     height: 30rem;
-    background-color: var(--grey2);
+    background-color: var(--blue);
     height: min-content;
     border-radius: 2rem;
     padding: 2rem;
     margin: 2rem 0 2rem 0;
+    color: var(--white);
 }
 
 article h1 {
