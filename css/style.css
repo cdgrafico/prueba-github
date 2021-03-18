@@ -1,0 +1,533 @@
+/*variables*/
+:root {
+    --golden: #b8860b;
+    --golden2: #f3c85d;
+    --red: #d60000;
+    --darkred: #b40000;
+    --white: #ffffff;
+    --darkblue: #27333d;
+    --blue: #26435a;
+    --grey: #8b8b8b;
+    --grey2: #dddddd;
+    --darkwhite: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+
+}
+
+/*cCONTENEDOR*/
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x, .0);
+    padding-left: var(--bs-gutter-x, .0);
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+/*HEADER*/
+
+/*ANUNCIO*/
+
+.anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--golden2);
+    font-size: .8rem;
+    height: 2.5rem;
+    text-align: center;
+    margin: 0
+}
+
+/*BARRA LOGO*/
+
+.logoCont {
+    height: 4.6rem;
+    width: 300px;
+    margin-left: 2rem;
+}
+
+.animate__animated:hover {
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.barraBusqueda {
+    display: none;
+}
+
+.barraLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top, var(--darkblue), var(--blue));
+    padding: 1.5rem 0 1.5rem 0;
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+}
+
+.buscar {
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
+    width: 4rem;
+    height: 2rem;
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    font-size: .9em;
+    border-radius: 1rem;
+    width: 5rem;
+}
+
+.buscar:hover {
+    background-color: var(--darkred);
+    border: 1px solid var(--darkred);
+    transition: .5s;
+}
+
+.barraSearch {
+    background-color: var(--darkwhite);
+    border: 1px solid var(--darkwhite);
+    width: 50%;
+    height: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: medium;
+    text-align: center;
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+/*CUENTA*/
+
+.cuenta {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--darkred);
+    transition: .5s;
+    width: 20rem;
+    padding: .7rem;
+    border-radius: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1.5rem 0 1.5rem
+}
+
+.cuentaIcono {
+    margin: 0;
+}
+
+.textoCuenta {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    width: 150%;
+}
+
+.textoCuenta:hover{
+    color: var(--white);
+}
+
+
+.cuenta:hover {
+    background-color: var(--golden);
+    transition: .5s;
+}
+
+/*IMÁGENES CABECERA*/
+
+.imgPrincipal {
+    display: none;
+}
+
+.imgPrincipal2 {
+    display: block;
+    filter: grayscale(0%);
+    transition: .5s;
+    margin-top: 40px;
+}
+
+.imgPrincipal2:hover {
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.imgCategoria {
+    height: 230px;
+    overflow: hidden;
+    filter: grayscale(0%);
+    transition: .5s;
+    z-index: 10;
+}
+
+.imgCategoria:hover {
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+.imgSeccion {
+    display: none;
+    margin-top: 40px;
+}
+
+/*NAV BAR*/
+
+.navbar {
+    background-color: var(--darkred);
+    font-weight: 500;
+    position:absolute;
+    z-index: 100;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--darkwhite);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--darkwhite);
+}
+
+.nav-item {
+    width: 12%;
+    transform: scale(1, 1);
+    transition: .5s;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+}
+
+/*MAIN*/
+
+main {
+    background-color: var(--darkwhite);
+}
+
+/*MARCAS*/
+
+.tituloMarcas {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marcas {
+    padding: .5rem;
+}
+
+.tituloM {
+    overflow: hidden;
+}
+
+article h2 {
+    color: var(--golden);
+}
+
+iframe {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--red);
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--darkblue);
+    padding: 1rem 1rem 0 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/*PRODUCTOS Y OFERTAS*/
+
+/*FORMULARIO CONTACTO*/
+
+.contacto{
+    margin-top: 2rem;
+}
+
+.formFlex {
+    height: 30rem;
+    background-color: var(--grey2);
+    height: min-content;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+
+article h1 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.imputform {
+    padding: .5rem;
+}
+
+.labelText {
+    width: 20rem;
+    height: 1.5rem;
+    color: var(--grey);
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.labelImput {
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--darkwhite);
+    border: 1px solid var(--grey2);
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.pais {
+    font-size: .9rem;
+    color: var(--white);
+    background-color: var(--grey);
+    height: 2rem;
+    width: 8rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.textoForm {
+    text-align: center;
+}
+
+.textoContacto {
+    width: 68rem;
+    padding: 2rem;
+}
+
+.textarea {
+    font-size: 1rem;
+    background-color: var(--darkwhite);
+    border-radius: 1rem;
+    border: 1px solid var(--grey2);
+    padding: 1rem;
+}
+
+.check {
+    font-weight: 500;
+    font-style: italic;
+    color: var(--grey);
+    padding: 1rem;
+}
+
+.casilla {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+.botonInfo {
+    font-size: .9rem;
+    color: var(--white);
+    background-color: var(--grey);
+    border: 1px solid var(--grey2);
+    height: 2rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.enviar {
+    width: 5rem;
+}
+
+
+/*VIDEO Y MAPAS*/
+
+.videoCentro{
+    margin: 2rem 0 2rem 0;
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, var(--darkblue), var(--blue));
+    padding: 2rem;
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes {
+    margin: 0 0 1rem 0;
+}
+
+.footerTexto {
+    font-style: normal;
+    text-align: center;
+    color: var(--golden);
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+/*MEDIA QUERY BREAKPOINTS*/
+
+@media only screen and (min-width:576px) {
+    /* Los estilos de acá solo se aplicarán a partir
+    del tamaño de pantalla indicado */
+
+    .anuncio {
+        font-size: 1rem;
+    }
+
+    .barraBusqueda {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        object-fit: contain;
+    }
+
+    .imgPrincipal {
+        display: block;
+        filter: grayscale(0%);
+        transition: .5s;
+        margin-top: 40px;
+    }
+
+    .imgPrincipal:hover {
+        filter: grayscale(100%);
+        transition: .5s;
+    }
+
+
+    .imgPrincipal2 {
+        display: none;
+
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgCategoria {
+        height: 100%;
+        filter: grayscale(0%);
+        transition: .5s;
+    }
+
+    .imgCategoria:hover {
+        filter: grayscale(100%);
+        transition: .5s;
+    }
+
+    .imgSeccion {
+        display: block;
+    }
+
+    .imgSeccion2 {
+        display: none;
+    }
+
+    .marcas {
+        padding: 1rem;
+    }
+
+    .videoCentro{
+        height: 30rem ;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+
+    .marcas {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+    .marcas {
+        padding: 0 3rem 2rem 3rem;
+    }
+
+    .tituloMarcas {
+        transform: scale(1.2);
+        padding: 2rem 0 2rem 0;
+
+    }
+
+    .videoCentro{
+        height: 40rem ;
+    }
+}
+
+@media only screen and (max-width:992px) {
+
+    .barraSearch {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: var(--darkwhite);
+        border: 1px solid var(--darkwhite);
+        width: 70%;
+    }
+
+    .nav-link {
+        text-align: left;
+        padding: 0 0 .5rem 0;
+    }
+
+    .nav-item {
+        width: 100px;
+    }
+
+    .navbar {
+        padding: .2rem 0 .2rem 0;
+    }
+
+    .navbar-nav {
+        padding: 0 0 0 1.5rem;
+        overflow: hidden;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+    }
+}
