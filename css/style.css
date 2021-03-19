@@ -284,7 +284,7 @@ h3 {
 
 .formFlex {
     height: 30rem;
-    background-color: var(--blue);
+    background-color: var(--darkred);
     height: min-content;
     border-radius: 2rem;
     padding: 2rem;
